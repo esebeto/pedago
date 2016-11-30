@@ -1,0 +1,347 @@
+/*
+Theme Name: Enfold Child
+Description: A <a href='http://codex.wordpress.org/Child_Themes'>Child Theme</a> for the Enfold Wordpress Theme. If you plan to do a lot of file modifications we recommend to use this Theme instead of the original Theme. Updating wil be much easier then.
+Version: 1.0
+Author: Kriesi
+Author URI: http://www.kriesi.at
+Template: enfold
+*/
+
+
+/* Removes the scroll to top link down near the footer of the theme */
+#scroll-top-link {
+  display: none; 
+}
+
+
+/* Bumps the top navigation up in font-size, default enfold theme size was too small */
+.av-main-nav > li > a { 
+  font-size: 1.25em; 
+}
+
+/* Styling the commmon h1, h2, h3 and p across the site */
+
+.template-page .entry-content-wrapper h1,
+.template-page .entry-content-wrapper h2 {
+  font-family: "futura-pt",sans-serif; 
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.template-page .entry-content-wrapper h1 {
+  font-size: 5em;
+  color: #fff;
+  text-shadow: 0 2px 10px #000;
+  font-family: "futura-pt",sans-serif; 
+  font-weight: 500;
+  text-transform: uppercase;
+  filter: progid:DXImageTransform.Microsoft.Shadow(color=#333333,direction=120);
+}
+
+.template-page .entry-content-wrapper h1 sup { 
+  font-size: .3em;
+  line-height: 2em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.template-page .entry-content-wrapper h2 {
+  font-size: 2em;
+  color: #FF0000;
+}
+
+.template-page .entry-content-wrapper h3 {
+  font-family: "proxima-nova-soft",sans-serif; 
+  font-size: 1.4em;
+  color: #560037;
+  font-weight: 400;
+  text-transform: lowercase;
+}
+
+#whypedago .template-page .entry-content-wrapper h3 {
+  color: #9E9487;
+}
+
+.av-parallax.avia-full-stretch {
+  background-position: center center !important;
+  background-size: cover;
+}
+
+
+.template-page .entry-content-wrapper h2.why-pedago-header { font-size: 2.9em; margin-top: 2.5em; }
+.template-page .entry-content-wrapper h3.why-pedago-header { font-size: 1.6em; }
+
+#top .main_color .input-text, 
+#top .main_color input[type='text'], 
+#top .main_color input[type='input'], 
+#top .main_color input[type='password'], 
+#top .main_color input[type='email'], 
+#top .main_color input[type='number'], 
+#top .main_color input[type='url'], 
+#top .main_color input[type='tel'], 
+#top .main_color input[type='search'], 
+#top .main_color textarea, 
+#top .main_color select {
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  border-width: 3px;
+  font-family: "futura-pt",sans-serif; 
+}
+  
+  
+#doinggood .template-page .entry-content-wrapper .mc4wp-alert,
+#smartly .template-page .entry-content-wrapper .mc4wp-alert,
+#doinggood .template-page .entry-content-wrapper .mc4wp-notice,
+#smartly .template-page .entry-content-wrapper .mc4wp-notice {
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+  background-color: #ff0000;
+  padding: 10px;
+  border-radius: 5px;
+  clear: both;
+  line-height: 1.2em;
+}
+
+
+#top .main_color .avia-color-theme-color.avia-button {
+  color: #FF0000;
+  margin-top: 30px;
+}
+
+#top .main_color .avia-color-theme-color.avia-button:hover {
+  color: #fff;
+}
+
+/* Mailchimp for Wordpress form styles (stolen from shortcodes.css) */
+
+.mc4wp-form .modified_width:before { content: none; }
+
+.mc4wp-form{
+  clear:both;
+}
+
+.mc4wp-form fieldset p br{display:none;}
+.mc4wp-form label {display:block; visibility: visible; position: relative; } /*dont delete. ie8 needs this separate*/
+.mc4wp-form label {display:block; visibility: visible; position: relative; margin-bottom: 7px; font-weight: 600;}
+
+#top .mc4wp-form .text_input, #top .mc4wp-form .select, #top .mc4wp-form .text_area {
+  width:100%;
+  margin-bottom:0;
+  display:inline;
+  min-width:50px;
+  padding:13px;
+  border-radius: 2px;
+}
+.mc4wp-form p{ position: relative; clear:both; float:left; width:100%;}
+.mc4wp-form p.hidden{position: absolute; width:0px; left:0; top:0; }
+.mc4wp-form .form_element_half{width:49.5%; float:left; margin-left:1%; clear:none;}
+.mc4wp-form .form_element_third{width:32.6%; float:left; margin-left:1%; clear:none;}
+.mc4wp-form .form_element_two_third{width:66.4%; float:left; margin-left:1%; clear:none;}
+.mc4wp-form .form_element_fourth{width:24.2%; float:left; margin-left:1%; clear:none;}
+.mc4wp-form .form_element_three_fourth{width:74.8%; float:left; margin-left:1%; clear:none;}
+.mc4wp-form .first_form{clear:both;margin-left:0;}
+.mc4wp-form .button {
+  margin: 0;
+  padding: 16px 20px;
+  border-radius: 2px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  font-weight: normal;
+  font-size: 12px;
+  min-width: 142px;
+  outline: none;
+}
+
+.button, .button:link, .button:visited, 
+.mc4wp-form input[type="submit"],
+.avia-button-wrap .avia-button {
+  border-radius: 0.25em;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #FF0000;
+  color: #FF0000;
+  display: inline-block;
+  font-family: "futura-pt",sans-serif; 
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  padding: 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  -webkit-transition: color 0.4s, background-color 0.4s, border 0.4s;
+  transition: color 0.4s, background-color 0.4s, border 0.4s; }
+
+.button:hover {
+  color: #7FDBFF;
+  border: 1px solid #7FDBFF;
+  -webkit-transition: background-color 0.3s, color 0.3s, border 0.3s;
+  transition: background-color 0.3s, color 0.3s, border 0.3s; }
+
+.button:active {
+  color: #0074D9;
+  border: 1px solid #0074D9;
+  -webkit-transition: background-color 0.3s, color 0.3s, border 0.3s;
+  transition: background-color 0.3s, color 0.3s, border 0.3s; }
+
+
+.av-sending-button { color: #fff;}
+
+#top #searchsubmit, .ajax_load { top: 7px; right: 7px; border-radius: 5px; }
+
+
+/* SMARTY MODULE CSS */
+#smartly h2 { 
+  font-size: 4em; 
+}
+
+#smartly p  { 
+  line-height: 1.25em; 
+  font-size: 2em; 
+  color: #560037; 
+  font-family: "proxima-nova-soft",sans-serif; 
+}
+ 
+  
+/* SUPERIOR LEARNING METHOD MODULE CSS */
+#superiorlearningmethod .flex_column.av_one_third { 
+  min-height: 100px; 
+}
+
+#superiorlearningmethod .flex_column .method-mobile { 
+  background: transparent url(http://pedago.wpengine.com/wp-content/uploads/2014/10/ico-mobile.png) no-repeat 0 0; 
+  padding-left: 70px;
+}
+#superiorlearningmethod .flex_column .method-intuitive { 
+  background: transparent url(http://pedago.wpengine.com/wp-content/uploads/2014/10/ico-inuitive.png) no-repeat 0 0; 
+  padding-left: 70px;
+}
+#superiorlearningmethod .flex_column .method-interactive { 
+  background: transparent url(http://pedago.wpengine.com/wp-content/uploads/2014/10/ico-interactive.png) no-repeat 0 0;
+  padding-left: 70px; 
+}
+#superiorlearningmethod .flex_column .method-versatile { 
+  background: transparent url(http://pedago.wpengine.com/wp-content/uploads/2014/10/ico-versatile.png) no-repeat 0 0; 
+  padding-left: 70px; 
+}
+#superiorlearningmethod .flex_column .method-intelligible { 
+  background: transparent url(http://pedago.wpengine.com/wp-content/uploads/2014/10/ico-intelligible.png) no-repeat 0 0; 
+  padding-left: 70px; 
+}
+#superiorlearningmethod .flex_column .method-enjoyable { 
+  background: transparent url(http://pedago.wpengine.com/wp-content/uploads/2014/10/ico-enjoyable2.png) no-repeat 0 0; 
+  padding-left: 70px; 
+}
+
+
+/* PEDAGO BLOG POSTS */
+#blogposts h2 { font-size: 4em; color: #FF0000; }
+#blogposts h3 { font-size: 2em; color: #FF0000; font-weight: 500; font-family: "futura-pt",sans-serif; text-transform: uppercase;}
+#blogposts .av_textblock_section p { font-size: 18px; line-height: 22px; }
+
+
+/* PEDAGO TEAM */
+#pedagoteam .template-page .entry-content-wrapper h2 { font-size: 20px; }
+#pedagoteam .template-page .entry-content-wrapper p { font-size: 18px; line-height: 22px; }
+#pedagoteam .template-page .entry-content-wrapper .flex_column:nth-child(1) h2,
+#pedagoteam .template-page .entry-content-wrapper .flex_column:nth-child(2) h2,
+#pedagoteam .template-page .entry-content-wrapper .flex_column:nth-child(3) h2 { font-size: 25px }
+#pedagoteam .template-page .entry-content-wrapper .flex_column:nth-child(1) p,
+#pedagoteam .template-page .entry-content-wrapper .flex_column:nth-child(2) p,
+#pedagoteam .template-page .entry-content-wrapper .flex_column:nth-child(3) p  { font-size: 20px; line-height: 24px; }
+
+
+/* DOING GOOD */
+#doinggood h2 { font-size: 4em; }
+#doinggood p  { line-height: 1.25em; font-size: 2em; color: #560037; font-family: "proxima-nova-soft",sans-serif; }
+
+
+/* SOCIAL ICONS */
+#social-icons { text-align: center; }
+#social-icons .av_font_icon { display: inline-block; margin-left: 5px; margin-right: 5px; }
+
+/* FOOTER */ 
+#footer { background-color: #f2eee8; padding: 0; }
+#footer .widget { margin: 0; }
+#top #wrap_all .textwidget { text-align: center; }
+#socket .copyright { float: none; }
+#socket .copyright .location { text-align: center; font-family: "futura-pt",sans-serif; text-transform: uppercase; font-size: 15px; }
+
+/*
+Desktop Styles
+================================================== */
+/* Note: Add new css to the media query below that you want to only effect the desktop view of your site */
+
+@media only screen and (min-width: 768px) {
+  /* Add your Desktop Styles here */
+  
+/*
+  .template-page .entry-content-wrapper h1 { 
+  font-size: 4em;
+   }
+*/
+  
+}
+
+
+
+/*
+Mobile Styles
+================================================== */
+/* Note: Add new css to the media query below that you want to only effect the Mobile and Tablet Portrait view */
+
+@media only screen and (max-width: 767px) {
+  /* Add your Mobile Styles here */
+  
+  .template-page .entry-content-wrapper h2.why-pedago-header { font-size: 2em; margin-top: 0; }
+  .template-page .entry-content-wrapper h3.why-pedago-header { font-size: 1.4em; }
+  
+  #pedagoteam h1,
+  #blogposts h1,
+  #doinggood h2,
+  #av_section_8 h1, #blogposts h1,
+  #superiorlearningmethod h1,
+  #smartly h2 
+  { font-size: 3em; }
+
+  #top .main_color .input-text, 
+  #top .main_color input[type='text'], 
+  #top .main_color input[type='input'], 
+  #top .main_color input[type='password'], 
+  #top .main_color input[type='email'], 
+  #top .main_color input[type='number'], 
+  #top .main_color input[type='url'], 
+  #top .main_color input[type='tel'], 
+  #top .main_color input[type='search'], 
+  #top .main_color textarea, #top .main_color select {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    
+  }
+    
+  .template-page .entry-content-wrapper h1 { 
+  font-size: 2.5em;
+   }
+  
+  .responsive .mc4wp-form .form_element{
+    width:100%; 
+    clear: both; 
+    margin-right:0; 
+    float: none;
+  }
+   .button, .button:link, .button:visited, 
+  .mc4wp-form input[type="submit"],
+  .avia-button-wrap .avia-button {
+    display: block;
+    font-size: 14px; }f
+  
+  .mc4wp-form .form_element_half,  
+  .mc4wp-form .form_element_third {
+    margin-left: 0;
+  }
+}
